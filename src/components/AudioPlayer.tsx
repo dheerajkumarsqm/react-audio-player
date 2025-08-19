@@ -4,10 +4,10 @@ import { AudioVisualizer } from "react-audio-visualize";
 import AudioControls from "./AudioControls";
 import TrackBar from "./TrackBar";
 
-import volumeSVG from "../icons/volume.svg";
-import muteSVG from "../icons/mute.svg";
-import repeatSVG from "../icons/repeat.svg";
-import repeatOneSVG from "../icons/repeat-one.svg";
+import volumeSVG from "../icons/volume-down-fill.svg";
+import muteSVG from "../icons/volume-mute-line.svg";
+import repeatSVG from "../icons/repeat-2-line.svg";
+import repeatOneSVG from "../icons/repeat-one-fill.svg";
 import Timer from "./Timer";
 
 interface AudioElementNativeProps {
@@ -351,7 +351,7 @@ const AudioPlayer: React.FC<
         style={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-evenly",
+          justifyContent: "space-between",
           gap: minimal ? 10 : 15,
           width,
         }}
